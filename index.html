@@ -1,0 +1,1930 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--
+    - primary meta tags
+  -->
+    <title>FTech - Camera And Fashion</title>
+    <meta name="title" content="FTech - Camera And Fashion" />
+
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon-light.svg"
+      type="image/svg+xml"
+    />
+
+    <!-- 
+   - css link
+  -->
+    <link href="./dist/style.css" rel="stylesheet" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--
+    - material icon link
+  -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close,menu,shopping_cart_checkout&display=block"
+    />
+
+    <!-- 
+    - script link
+  -->
+    <script src="./assets/js/script.js" defer></script>
+  </head>
+
+  <body class="bg-papaya_whip text-jet font-secondary">
+    <!-- 
+    - #Header
+  -->
+
+    <header class="header" data-header>
+      <div
+        class="container relative flex items-center justify-between px-3 py-5 mx-auto"
+      >
+        <!-- Logo bên trái -->
+        <a
+          href="#"
+          class="logo text-white font-bold text-4xl tracking-wide xxl:text-3xl"
+        >
+          FTECH
+        </a>
+
+        <!-- Navbar căn giữa -->
+        <nav
+          class="navbar absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 md:static md:transform-none"
+          data-navbar
+        >
+          <button
+            class="nav-close-btn md:hidden"
+            aria-label="close menu"
+            data-nav-toggler
+          >
+            <span class="material-symbols-rounded" aria-hidden="true"
+              >close</span
+            >
+          </button>
+
+          <ul class="flex items-center gap-5 md:gap-7">
+            <li>
+              <a href="#home" class="navbar-link">Home</a>
+            </li>
+
+            <li>
+              <button
+                class="navbar-link flex items-center gap-2"
+                aria-label="shop"
+                data-dropdown-toggler
+              >
+                Shop
+              </button>
+            </li>
+
+            <li>
+              <a href="#blog" class="navbar-link">Blog</a>
+            </li>
+
+            <li>
+              <a href="#latest" class="navbar-link">Preset</a>
+            </li>
+
+            <li>
+              <a href="#info" class="navbar-link">About Us</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Overlay dành cho mobile menu -->
+        <div class="overlay md:hidden" data-overlay data-nav-toggler></div>
+      </div>
+    </header>
+
+    <main>
+      <!-- 
+      - #Hero
+    -->
+      <section class="hero relative w-full min-h-screen" id="home">
+        <!-- Hero background image -->
+        <figure class="absolute inset-0 w-full h-full">
+          <img
+            src="./assets/images/hero.jpg"
+            alt="hero image"
+            class="w-full h-full object-cover blur-lg brightness-[0.3] lg:blur-none lg:brightness-100"
+          />
+        </figure>
+
+        <!-- Nội dung hero -->
+        <div
+          class="container relative z-10 mx-auto px-3 pb-10 sm:px-7 md:py-16 flex flex-col justify-center min-h-screen"
+        >
+          <div class="hero-content text-center lg:text-left">
+            <h3
+              class="text-white font-primary text-upper font-bold text-2xl mt-3 sm:text-4xl md:text-5xl lg:text-6xl xxl:text-7xl"
+            >
+              Mọi thứ cho Content Creator.
+            </h3>
+
+            <a
+              href="#"
+              class="btn bg-butterscotch_light py-3 px-10 mt-5 mx-auto md:mt-10 lg:mx-0 xxl:text-xl"
+              aria-label="shop"
+            >
+              Xem ngay
+            </a>
+
+            <!-- Brand logos (hiển thị trên mobile) -->
+            <div class="mt-16 md:hidden">
+              <p class="text-white font-bold">Trusted by :</p>
+
+              <ul
+                class="brand-list flex items-center gap-5 overflow-x-auto snap-x snap-mandatory py-5 lg:mr-10 lg:px-3 lg:-ms-3"
+              >
+                <li class="brand-list-item">
+                  <img src="./assets/images/brand-1.svg" alt="" class="w-32" />
+                </li>
+                <li class="brand-list-item">
+                  <img src="./assets/images/brand-2.svg" alt="" class="w-32" />
+                </li>
+                <li class="brand-list-item">
+                  <img
+                    src="./assets/images/brand-3.svg"
+                    alt=""
+                    class="w-[155px]"
+                  />
+                </li>
+                <li class="brand-list-item">
+                  <img
+                    src="./assets/images/brand-4.svg"
+                    alt=""
+                    class="w-[155px]"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 
+      - #Product showcase
+    -->
+
+      <!-- 
+      - #Product categories
+    -->
+
+      <section>
+        <div
+          class="container mx-auto px-3 py-10 md:py-16 grid gap-6 sm:px-7 md:grid-cols-[0.8fr_1fr] md:items-center md:gap-0 lg:py-24 lg:grid-cols-[0.8fr_1fr] xl:grid-cols-[0.5fr_1fr] xl:py-20 xl:px-10"
+        >
+          <div class="md:mb-16">
+            <h1
+              class="text-caf_noir font-inter font-bold text-6xl text-center my-3 md:text-start lg:text-7xl"
+            >
+              Top Preset được ưa chuộng
+            </h1>
+
+            <p class="text-jet text-center text-lg md:hidden">
+              Explore our curated popular collection product categories
+              featuring high-quality.
+            </p>
+          </div>
+
+          <div class="grid gap-3 md:gap-5 lg:gap-10" data-slider-container>
+            <ul
+              class="slider h-[450px] sm:max-w-[540px] sm:ms-5 md:max-w-full md:ms-0"
+              data-slider
+            >
+              <li class="slider-item group pb-6 space-y-4 w-64 rounded-lg">
+                <div class="relative overflow-hidden">
+                  <!-- Ảnh đại diện sản phẩm -->
+                  <figure
+                    class="img-holder rounded-lg h-80"
+                    style="--width: 265px; --height: 320px"
+                  >
+                    <img
+                      src="./assets/images/C-Agfa Vista 100 - 1.jpg"
+                      width="265"
+                      height="320"
+                      loading="lazy"
+                      alt="C-Agfa Vista 100"
+                      class="img-cover duration-[0.5s] ease-linear group-hover:scale-105"
+                    />
+                  </figure>
+
+                  <!-- Action buttons -->
+                  <div
+                    class="bg-[#d89245c7] text-white px-3 py-1 absolute top-2/4 left-2/4 -translate-x-2/4 flex items-center space-x-2 opacity-0 duration-75 ease-linear group-hover:-translate-y-2/4 group-hover:opacity-100 rounded-lg"
+                  >
+                    <!-- Add to wishlist -->
+                    <button
+                      type="button"
+                      data-cart-toggler
+                      class="h-9 w-9 grid place-items-center hover:scale-110 transition-transform"
+                      title="Add to wishlist"
+                    >
+                      <ion-icon
+                        name="heart-outline"
+                        aria-hidden="true"
+                        class="text-[22px]"
+                      ></ion-icon>
+                    </button>
+
+                    <!-- View product button (Hiển thị popup so sánh ảnh) -->
+                    <button
+                      class="h-9 w-9 grid place-items-center view-product-btn hover:scale-110 transition-transform"
+                      data-image="./assets/images/C-Agfa Vista 100 - 1.jpg"
+                      data-overlay="./assets/images/Goc1.jpg"
+                      title="View preset"
+                    >
+                      <ion-icon
+                        name="eye-outline"
+                        aria-hidden="true"
+                        class="text-[22px]"
+                      ></ion-icon>
+                    </button>
+
+                    <!-- Download button -->
+                    <a
+                      href="./assets/downloads/C - Agfa Vista 100 - -.lrtemplate"
+                      download
+                      class="h-9 w-9 grid place-items-center hover:scale-110 transition-transform"
+                      title="Download file"
+                    >
+                      <ion-icon
+                        name="download-outline"
+                        aria-hidden="true"
+                        class="text-[22px]"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Thông tin sản phẩm -->
+                <div class="text-center space-y-1">
+                  <h3 class="text-lg font-bold text-gray-800">
+                    C-Agfa Vista 100
+                  </h3>
+                  <p class="text-sm text-gray-500">
+                    Preset style giúp ảnh có màu trông dịu nhẹ và thoáng mắt
+                    hơn.
+                  </p>
+                </div>
+              </li>
+
+              <li class="slider-item group pb-6 space-y-4 w-64 rounded-lg">
+                <div class="relative overflow-hidden">
+                  <!-- Ảnh đại diện sản phẩm -->
+                  <figure
+                    class="img-holder rounded-lg h-80"
+                    style="--width: 265px; --height: 320px"
+                  >
+                    <img
+                      src="./assets/images/C-Fuji Neopan -2.jpg"
+                      width="265"
+                      height="320"
+                      loading="lazy"
+                      alt="C-Fuji NeoPan"
+                      class="img-cover duration-[0.5s] ease-linear group-hover:scale-105"
+                    />
+                  </figure>
+
+                  <!-- Action buttons -->
+                  <div
+                    class="bg-[#d89245c7] text-white px-3 py-1 absolute top-2/4 left-2/4 -translate-x-2/4 flex items-center space-x-2 opacity-0 duration-75 ease-linear group-hover:-translate-y-2/4 group-hover:opacity-100 rounded-lg"
+                  >
+                    <!-- Add to wishlist -->
+                    <button
+                      type="button"
+                      data-cart-toggler
+                      class="h-9 w-9 grid place-items-center hover:scale-110 transition-transform"
+                      title="Add to wishlist"
+                    >
+                      <ion-icon
+                        name="heart-outline"
+                        aria-hidden="true"
+                        class="text-[22px]"
+                      ></ion-icon>
+                    </button>
+
+                    <!-- View product button (Hiển thị popup so sánh ảnh) -->
+                    <button
+                      class="h-9 w-9 grid place-items-center view-product-btn hover:scale-110 transition-transform"
+                      data-image="./assets/images/C-Fuji Neopan -2.jpg"
+                      data-overlay="./assets/images/Goc2.jpg"
+                      title="View product"
+                    >
+                      <ion-icon
+                        name="eye-outline"
+                        aria-hidden="true"
+                        class="text-[22px]"
+                      ></ion-icon>
+                    </button>
+
+                    <!-- Download button -->
+                    <a
+                      href="./assets/downloads/C - Fuji Neopan 400 - -.lrtemplate"
+                      download
+                      class="h-9 w-9 grid place-items-center hover:scale-110 transition-transform"
+                      title="Download file"
+                    >
+                      <ion-icon
+                        name="download-outline"
+                        aria-hidden="true"
+                        class="text-[22px]"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Thông tin sản phẩm -->
+                <div class="text-center space-y-1">
+                  <h3 class="text-lg font-bold text-gray-800">C-Fuji Neopan</h3>
+                  <p class="text-sm text-gray-500">
+                    Preset film style giúp ảnh đen trắng trở nên sắc nét và cổ
+                    điển hơn.
+                  </p>
+                </div>
+              </li>
+
+              <li class="slider-item group pb-6 space-y-4 w-64 rounded-lg">
+                <div class="relative overflow-hidden">
+                  <!-- Ảnh đại diện sản phẩm -->
+                  <figure
+                    class="img-holder rounded-lg h-80"
+                    style="--width: 265px; --height: 320px"
+                  >
+                    <img
+                      src="./assets/images/C-Kodak Ektar - 3.jpg"
+                      width="265"
+                      height="320"
+                      loading="lazy"
+                      alt="C-Kodak Ektar"
+                      class="img-cover duration-[0.5s] ease-linear group-hover:scale-105"
+                    />
+                  </figure>
+
+                  <!-- Action buttons -->
+                  <div
+                    class="bg-[#d89245c7] text-white px-3 py-1 absolute top-2/4 left-2/4 -translate-x-2/4 flex items-center space-x-2 opacity-0 duration-75 ease-linear group-hover:-translate-y-2/4 group-hover:opacity-100 rounded-lg"
+                  >
+                    <!-- Add to wishlist -->
+                    <button
+                      type="button"
+                      data-cart-toggler
+                      class="h-9 w-9 grid place-items-center hover:scale-110 transition-transform"
+                      title="Add to wishlist"
+                    >
+                      <ion-icon
+                        name="heart-outline"
+                        aria-hidden="true"
+                        class="text-[22px]"
+                      ></ion-icon>
+                    </button>
+
+                    <!-- View product button (Hiển thị popup so sánh ảnh) -->
+                    <button
+                      class="h-9 w-9 grid place-items-center view-product-btn hover:scale-110 transition-transform"
+                      data-image="./assets/images/C-Kodak Ektar - 3.jpg"
+                      data-overlay="./assets/images/Goc3.jpg"
+                      title="View product"
+                    >
+                      <ion-icon
+                        name="eye-outline"
+                        aria-hidden="true"
+                        class="text-[22px]"
+                      ></ion-icon>
+                    </button>
+
+                    <!-- Download button -->
+                    <a
+                      href="./assets/downloads/C - Kodak Ektar 100 - -.lrtemplate"
+                      download
+                      class="h-9 w-9 grid place-items-center hover:scale-110 transition-transform"
+                      title="Download file"
+                    >
+                      <ion-icon
+                        name="download-outline"
+                        aria-hidden="true"
+                        class="text-[22px]"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Thông tin sản phẩm -->
+                <div class="text-center space-y-1">
+                  <h3 class="text-lg font-bold text-gray-800">
+                    C-Kodak Ektar 100
+                  </h3>
+                  <p class="text-sm text-gray-500">
+                    Preset style giúp ảnh trở nên đẹp và trẻ trung hơn.
+                  </p>
+                </div>
+              </li>
+
+              <li class="slider-item group pb-6 space-y-4 w-64 rounded-lg">
+                <div class="relative overflow-hidden">
+                  <!-- Ảnh đại diện sản phẩm -->
+                  <figure
+                    class="img-holder rounded-lg h-80"
+                    style="--width: 265px; --height: 320px"
+                  >
+                    <img
+                      src="./assets/images/C-Kodak Max - 4.jpg"
+                      width="265"
+                      height="320"
+                      loading="lazy"
+                      alt="C-Kodak Max"
+                      class="img-cover duration-[0.5s] ease-linear group-hover:scale-105"
+                    />
+                  </figure>
+
+                  <!-- Action buttons -->
+                  <div
+                    class="bg-[#d89245c7] text-white px-3 py-1 absolute top-2/4 left-2/4 -translate-x-2/4 flex items-center space-x-2 opacity-0 duration-75 ease-linear group-hover:-translate-y-2/4 group-hover:opacity-100 rounded-lg"
+                  >
+                    <!-- Add to wishlist -->
+                    <button
+                      type="button"
+                      data-cart-toggler
+                      class="h-9 w-9 grid place-items-center hover:scale-110 transition-transform"
+                      title="Add to wishlist"
+                    >
+                      <ion-icon
+                        name="heart-outline"
+                        aria-hidden="true"
+                        class="text-[22px]"
+                      ></ion-icon>
+                    </button>
+
+                    <!-- View product button (Hiển thị popup so sánh ảnh) -->
+                    <button
+                      class="h-9 w-9 grid place-items-center view-product-btn hover:scale-110 transition-transform"
+                      data-image="./assets/images/C-Kodak Max - 4.jpg"
+                      data-overlay="./assets/images/Goc4.jpg"
+                      title="View product"
+                    >
+                      <ion-icon
+                        name="eye-outline"
+                        aria-hidden="true"
+                        class="text-[22px]"
+                      ></ion-icon>
+                    </button>
+
+                    <!-- Download button -->
+                    <a
+                      href="./assets/downloads/C - Kodak Max 800 - -.lrtemplate"
+                      download
+                      class="h-9 w-9 grid place-items-center hover:scale-110 transition-transform"
+                      title="Download file"
+                    >
+                      <ion-icon
+                        name="download-outline"
+                        aria-hidden="true"
+                        class="text-[22px]"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Thông tin sản phẩm -->
+                <div class="text-center space-y-1">
+                  <h3 class="text-lg font-bold text-gray-800">
+                    C- Kodak Max 800
+                  </h3>
+                  <p class="text-sm text-gray-500">
+                    Preset style giúp ảnh đẹp hơn.
+                  </p>
+                </div>
+              </li>
+
+              <li class="slider-item group pb-6 space-y-4 w-64 rounded-lg">
+                <div class="relative overflow-hidden">
+                  <!-- Ảnh đại diện sản phẩm -->
+                  <figure
+                    class="img-holder rounded-lg h-80"
+                    style="--width: 265px; --height: 320px"
+                  >
+                    <img
+                      src="./assets/images/C-Kodak Ultra Max - 2.jpg"
+                      width="265"
+                      height="320"
+                      loading="lazy"
+                      alt="C-Kodak Max"
+                      class="img-cover duration-[0.5s] ease-linear group-hover:scale-105"
+                    />
+                  </figure>
+
+                  <!-- Action buttons -->
+                  <div
+                    class="bg-[#d89245c7] text-white px-3 py-1 absolute top-2/4 left-2/4 -translate-x-2/4 flex items-center space-x-2 opacity-0 duration-75 ease-linear group-hover:-translate-y-2/4 group-hover:opacity-100 rounded-lg"
+                  >
+                    <!-- Add to wishlist -->
+                    <button
+                      type="button"
+                      data-cart-toggler
+                      class="h-9 w-9 grid place-items-center hover:scale-110 transition-transform"
+                      title="Add to wishlist"
+                    >
+                      <ion-icon
+                        name="heart-outline"
+                        aria-hidden="true"
+                        class="text-[22px]"
+                      ></ion-icon>
+                    </button>
+
+                    <!-- View product button (Hiển thị popup so sánh ảnh) -->
+                    <button
+                      class="h-9 w-9 grid place-items-center view-product-btn hover:scale-110 transition-transform"
+                      data-image="./assets/images/C-Kodak Ultra Max - 2.jpg"
+                      data-overlay="./assets/images/Goc2.jpg"
+                      title="View product"
+                    >
+                      <ion-icon
+                        name="eye-outline"
+                        aria-hidden="true"
+                        class="text-[22px]"
+                      ></ion-icon>
+                    </button>
+
+                    <!-- Download button -->
+                    <a
+                      href="./assets/downloads/C - Kodak UltraMax 400 Cool +.lrtemplate"
+                      download
+                      class="h-9 w-9 grid place-items-center hover:scale-110 transition-transform"
+                      title="Download file"
+                    >
+                      <ion-icon
+                        name="download-outline"
+                        aria-hidden="true"
+                        class="text-[22px]"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Thông tin sản phẩm -->
+                <div class="text-center space-y-1">
+                  <h3 class="text-lg font-bold text-gray-800">
+                    C- Kodak Ultra Max
+                  </h3>
+                  <p class="text-sm text-gray-500">
+                    Preset style giúp ảnh đẹp hơn.
+                  </p>
+                </div>
+              </li>
+            </ul>
+
+            <div
+              class="flex items-center gap-3 mx-auto md:-order-1 md:mx-0 md:ms-auto"
+            >
+              <button
+                class="arrow-button"
+                aria-label="slide prev"
+                data-prev-btn
+              >
+                <ion-icon
+                  name="chevron-back-outline"
+                  aria-hidden="true"
+                  class="text-caf_noir font-bold"
+                ></ion-icon>
+              </button>
+
+              <button
+                class="arrow-button"
+                aria-label="slide prev"
+                data-next-btn
+              >
+                <ion-icon
+                  name="chevron-forward-outline"
+                  aria-hidden="true"
+                  class="text-caf_noir font-bold"
+                ></ion-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 
+      - #Blog
+    -->
+
+      <section
+        class="bg-caf_noir text-white relative overflow-hidden"
+        id="blog"
+      >
+        <div
+          class="container mx-auto px-3 py-10 grid gap-10 relative z-[1] sm:gap-5 sm:grid-cols-2 sm:items-center sm:px-7 md:py-16 md:items-stretch lg:py-24 xl:py-20 xl:px-10"
+        >
+          <div class="md:grid md:content-between">
+            <div>
+              <h1
+                class="font-primary font-bold text-5xl mb-4 sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
+              >
+                FTech Hub: <br />
+               Cộng đồng máy ảnh 2hand
+              </h1>
+
+              <p
+                class="text-lg italic mb-10 lg:max-w-md xl:text-2xl xl:max-w-lg"
+              >
+                Khám phá Notion Hub – nền tảng hỗ trợ cộng đồng đam mê nhiếp ảnh và sáng tạo nội dung.
+              </p>
+            </div>
+
+            <div>
+              <p class="font-bold sm:text-sm md:text-base">
+                Giữa tháng 10, 2025 <br />
+              </p>
+
+              <a
+                href="#"
+                class="btn bg-butterscotch_light py-3 px-10 mt-5 cursor-pointer lg:mx-0 lg:py-4"
+                aria-label="read more"
+              >
+                Tìm hiểu thêm
+
+                <ion-icon
+                  name="arrow-forward-outline"
+                  aria-hidden="true"
+                ></ion-icon>
+              </a>
+            </div>
+          </div>
+
+          <div class="grid gap-3 max-w-md ms-auto lg:grid-cols-3 lg:max-w-full">
+            <div class="grid grid-cols-3 gap-3 lg:col-span-2">
+              <figure
+                class="img-holder group col-span-3"
+                style="--width: 474px; --height: 474px"
+              >
+                <img
+                  src="./assets/images/NotionHub.jpg"
+                  width="474"
+                  height="474"
+                  loading="lazy"
+                  alt=""
+                  class="img-cover duration-200 ease-linear group-hover:scale-[1.01]"
+                />
+              </figure>
+
+              <figure
+                class="img-holder group"
+                style="--width: 160px; --height: 160px"
+              >
+                <img
+                  src="./assets/images/Forum.jpg"
+                  width="160"
+                  height="160"
+                  loading="lazy"
+                  alt=""
+                  class="img-cover duration-200 ease-linear group-hover:scale-105"
+                />
+              </figure>
+
+              <figure
+                class="img-holder group"
+                style="--width: 160px; --height: 160px"
+              >
+                <img
+                  src="./assets/images/Baiviet.jpg"
+                  width="160"
+                  height="160"
+                  loading="lazy"
+                  alt=""
+                  class="img-cover duration-200 ease-linear group-hover:scale-105"
+                />
+              </figure>
+
+              <figure
+                class="img-holder group"
+                style="--width: 160px; --height: 160px"
+              >
+                <img
+                  src="./assets/images/FtechHub.jpg"
+                  width="160"
+                  height="160"
+                  loading="lazy"
+                  alt=""
+                  class="img-cover duration-200 ease-linear group-hover:scale-105"
+                />
+              </figure>
+            </div>
+
+            <figure
+              class="img-holder group hidden lg:block"
+              style="--width: 250px; --height: 500px"
+            >
+              <img
+                src="./assets/images/FtechHub.jpg"
+                width="250"
+                height="500"
+                loading="lazy"
+                alt=""
+                class="img-cover duration-200 ease-linear group-hover:scale-[1.01]"
+              />
+            </figure>
+          </div>
+        </div>
+
+        <img
+          src="./assets/images/autumn-leaf.svg"
+          loading="lazy"
+          alt=""
+          class="absolute top-96 -left-2 opacity-5 max-w-56 animate-bouncing sm:-left-16"
+        />
+      </section>
+
+      <!-- 
+      - #New arrival
+    -->
+      <section id="latest">
+        <div
+          class="container max-w-[550px] mx-auto px-3 py-10 md:py-16 md:max-w-[1000px] lg:py-24 lg:max-w-[1200px] xl:max-w-[1400px] xxl:max-w-[1600px]"
+        >
+          <h1
+            class="text-caf_noir font-inter font-bold text-6xl text-center my-3"
+          >
+            Khó khăn trong việc chỉnh sửa tài nguyên ?
+          </h1>
+
+          <p class="text-jet text-center text-lg font-inter mx-auto md:text-lg">
+            Khám phá ngay bộ sưu tập của chúng tôi với nhiều phong cách,
+            thiết kế, đi kèm theo đó là tài liệu và hướng dẫn sử dụng chi tiết !
+          </p>
+
+          <ul
+            class="grid-list grid gap-3 mt-6 xs:grid-cols-2 md:grid-cols-3 md:max-w-[800px] md:mx-auto lg:grid-cols-5 lg:gap-4 lg:max-w-[1370px] xl:gap-5"
+          >
+            <li
+              class="group pb-6 space-y-5 max-w-64 rounded-lg duration-75 ease-linear"
+            >
+              <div class="relative overflow-hidden rounded-lg">
+                <!-- Ảnh đại diện -->
+                <figure class="img-holder h-80">
+                  <img
+                    src="./assets/images/Nostalgia.png"
+                    width="256"
+                    height="320"
+                    loading="lazy"
+                    alt="Product Thumbnail"
+                    class="img-cover duration-[0.5s] ease-linear group-hover:scale-105"
+                  />
+                </figure>
+
+                <!-- Các nút action -->
+                <div
+                  class="bg-[#d89245c7] text-white px-3 py-1 absolute top-2/4 left-2/4 -translate-x-2/4 flex items-center space-x-2 opacity-0 duration-75 ease-linear group-hover:-translate-y-2/4 group-hover:opacity-100 rounded-lg"
+                >
+                  <!-- Wishlist -->
+                  <button
+                    type="button"
+                    data-cart-toggler
+                    class="h-9 w-9 grid place-items-center hover:scale-110 transition-transform"
+                    title="Add to wishlist"
+                  >
+                    <ion-icon
+                      name="heart-outline"
+                      aria-hidden="true"
+                      class="text-[22px]"
+                    ></ion-icon>
+                  </button>
+
+                  <!-- Play video button (mở popup video) -->
+                  <button
+                    class="h-9 w-9 grid place-items-center hover:scale-110 transition-transform view-video-btn"
+                    data-video="./assets/videos/47414248 Nostalgia Wedding LUTs Pack.mp4"
+                    title="Watch Video"
+                  >
+                    <ion-icon
+                      name="play-outline"
+                      aria-hidden="true"
+                      class="text-[22px]"
+                    ></ion-icon>
+                  </button>
+
+                  <!-- Download button -->
+                  <a
+                    href="./assets/downloads/47414248 Nostalgia Wedding LUTs Pack.rar"
+                    download
+                    class="h-9 w-9 grid place-items-center hover:scale-110 transition-transform"
+                    title="Download file"
+                  >
+                    <ion-icon
+                      name="download-outline"
+                      aria-hidden="true"
+                      class="text-[22px]"
+                    ></ion-icon>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Nội dung sản phẩm -->
+              <div class="card-content space-y-2 text-center">
+                <p class="text-lg font-bold text-gray-800">Nostalgia Wedding LUTs </p>
+                <p class="text-sm font-inter text-gray-500">
+                  Mang vẻ đẹp cổ điển cho ảnh & video cưới.
+                </p>
+              </div>
+            </li>
+
+            <li
+              class="group pb-6 space-y-5 max-w-64 rounded-lg duration-75 ease-linear"
+            >
+              <div class="relative overflow-hidden rounded-lg">
+                <!-- Ảnh đại diện -->
+                <figure class="img-holder h-80">
+                  <img
+                    src="./assets/images/SoftSkinLuts.png"
+                    width="256"
+                    height="320"
+                    loading="lazy"
+                    alt="Product Thumbnail"
+                    class="img-cover duration-[0.5s] ease-linear group-hover:scale-105"
+                  />
+                </figure>
+
+                <!-- Các nút action -->
+                <div
+                  class="bg-[#d89245c7] text-white px-3 py-1 absolute top-2/4 left-2/4 -translate-x-2/4 flex items-center space-x-2 opacity-0 duration-75 ease-linear group-hover:-translate-y-2/4 group-hover:opacity-100 rounded-lg"
+                >
+                  <!-- Wishlist -->
+                  <button
+                    type="button"
+                    data-cart-toggler
+                    class="h-9 w-9 grid place-items-center hover:scale-110 transition-transform"
+                    title="Add to wishlist"
+                  >
+                    <ion-icon
+                      name="heart-outline"
+                      aria-hidden="true"
+                      class="text-[22px]"
+                    ></ion-icon>
+                  </button>
+
+                  <!-- Play video button (mở popup video) -->
+                  <button
+                    class="h-9 w-9 grid place-items-center hover:scale-110 transition-transform view-video-btn"
+                    data-video="./assets/videos/Soft Skin LUTs DR 51884388.mp4"
+                    title="Watch Video"
+                  >
+                    <ion-icon
+                      name="play-outline"
+                      aria-hidden="true"
+                      class="text-[22px]"
+                    ></ion-icon>
+                  </button>
+
+                  <!-- Download button -->
+                  <a
+                    href="./assets/downloads/Soft Skin LUTs DR 51884388.rar"
+                    download
+                    class="h-9 w-9 grid place-items-center hover:scale-110 transition-transform"
+                    title="Download file"
+                  >
+                    <ion-icon
+                      name="download-outline"
+                      aria-hidden="true"
+                      class="text-[22px]"
+                    ></ion-icon>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Nội dung sản phẩm -->
+              <div class="card-content space-y-2 text-center">
+                <p class="text-lg font-bold text-gray-800">Soft Skin LUTs</p>
+                <p class="text-sm font-inter text-gray-500">
+                  Làm mịn da tự nhiên và mềm mại.
+                </p>
+              </div>
+            </li>
+
+            <li
+              class="group pb-6 space-y-5 max-w-64 rounded-lg duration-75 ease-linear"
+            >
+              <div class="relative overflow-hidden rounded-lg">
+                <!-- Ảnh đại diện -->
+                <figure class="img-holder h-80">
+                  <img
+                    src="./assets/images/SocialMedia.png"
+                    width="256"
+                    height="320"
+                    loading="lazy"
+                    alt="Product Thumbnail"
+                    class="img-cover duration-[0.5s] ease-linear group-hover:scale-105"
+                  />
+                </figure>
+
+                <!-- Các nút action -->
+                <div
+                  class="bg-[#d89245c7] text-white px-3 py-1 absolute top-2/4 left-2/4 -translate-x-2/4 flex items-center space-x-2 opacity-0 duration-75 ease-linear group-hover:-translate-y-2/4 group-hover:opacity-100 rounded-lg"
+                >
+                  <!-- Wishlist -->
+                  <button
+                    type="button"
+                    data-cart-toggler
+                    class="h-9 w-9 grid place-items-center hover:scale-110 transition-transform"
+                    title="Add to wishlist"
+                  >
+                    <ion-icon
+                      name="heart-outline"
+                      aria-hidden="true"
+                      class="text-[22px]"
+                    ></ion-icon>
+                  </button>
+
+                  <!-- Play video button (mở popup video) -->
+                  <button
+                    class="h-9 w-9 grid place-items-center hover:scale-110 transition-transform view-video-btn"
+                    data-video="./assets/videos/58366764 Social Media Counter  DR.mp4"
+                    title="Watch Video"
+                  >
+                    <ion-icon
+                      name="play-outline"
+                      aria-hidden="true"
+                      class="text-[22px]"
+                    ></ion-icon>
+                  </button>
+
+                  <!-- Download button -->
+                  <a
+                    href="./assets/downloads/58366764 Social Media Counter  DR.rar"
+                    download
+                    class="h-9 w-9 grid place-items-center hover:scale-110 transition-transform"
+                    title="Download file"
+                  >
+                    <ion-icon
+                      name="download-outline"
+                      aria-hidden="true"
+                      class="text-[22px]"
+                    ></ion-icon>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Nội dung sản phẩm -->
+              <div class="card-content space-y-2 text-center">
+                <p class="text-lg font-bold text-gray-800">Social Media Counter</p>
+                <p class="text-sm font-inter text-gray-500">
+                  Đo lường và quản lý lượt theo dõi dễ dàng.
+                </p>
+              </div>
+            </li>
+
+            <li
+              class="off-card relative bg-no-repeat rounded-md bg-center bg-cover overflow-hidden p-3 xs:col-span-2 xs:mb-6 md:mb-0 md:p-5 md:order-1 lg:order-none"
+              style="
+                background-image: url('./assets/images/Luts.jpg');
+              "
+            >
+            </li>
+
+            <li
+              class="off-card relative bg-no-repeat rounded-md bg-center bg-cover overflow-hidden p-3 xs:col-span-2 xs:mb-6 md:mb-0 md:p-5 md:order-1 lg:order-none"
+              style="
+                background-image: url('./assets/images/Transistions.webp');
+              "
+            >
+            </li>
+
+            <li
+              class="group pb-6 space-y-5 max-w-64 rounded-lg duration-75 ease-linear"
+            >
+              <div class="relative overflow-hidden rounded-lg">
+                <!-- Ảnh đại diện -->
+                <figure class="img-holder h-80">
+                  <img
+                    src="./assets/images/PaperTear.png"
+                    width="256"
+                    height="320"
+                    loading="lazy"
+                    alt="Product Thumbnail"
+                    class="img-cover duration-[0.5s] ease-linear group-hover:scale-105"
+                  />
+                </figure>
+
+                <!-- Các nút action -->
+                <div
+                  class="bg-[#d89245c7] text-white px-3 py-1 absolute top-2/4 left-2/4 -translate-x-2/4 flex items-center space-x-2 opacity-0 duration-75 ease-linear group-hover:-translate-y-2/4 group-hover:opacity-100 rounded-lg"
+                >
+                  <!-- Wishlist -->
+                  <button
+                    type="button"
+                    data-cart-toggler
+                    class="h-9 w-9 grid place-items-center hover:scale-110 transition-transform"
+                    title="Add to wishlist"
+                  >
+                    <ion-icon
+                      name="heart-outline"
+                      aria-hidden="true"
+                      class="text-[22px]"
+                    ></ion-icon>
+                  </button>
+
+                  <!-- Play video button (mở popup video) -->
+                  <button
+                    class="h-9 w-9 grid place-items-center hover:scale-110 transition-transform view-video-btn"
+                    data-video="./assets/videos/59061819 Paper Tear Transitions.mp4"
+                    title="Watch Video"
+                  >
+                    <ion-icon
+                      name="play-outline"
+                      aria-hidden="true"
+                      class="text-[22px]"
+                    ></ion-icon>
+                  </button>
+
+                  <!-- Download button -->
+                  <a
+                    href="./assets/downloads/59061819 Paper Tear Transitions.rar"
+                    download
+                    class="h-9 w-9 grid place-items-center hover:scale-110 transition-transform"
+                    title="Download file"
+                  >
+                    <ion-icon
+                      name="download-outline"
+                      aria-hidden="true"
+                      class="text-[22px]"
+                    ></ion-icon>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Nội dung sản phẩm -->
+              <div class="card-content space-y-2 text-center">
+                <p class="text-lg font-bold text-gray-800">Paper Tear Transitions</p>
+                <p class="text-sm text-gray-500">
+Chuyển cảnh ấn tượng, tự nhiên như xé giấy.                </p>
+              </div>
+            </li>
+
+            <li
+              class="group pb-6 space-y-5 max-w-64 rounded-lg duration-75 ease-linear"
+            >
+              <div class="relative overflow-hidden rounded-lg">
+                <!-- Ảnh đại diện -->
+                <figure class="img-holder h-80">
+                  <img
+                    src="./assets/images/VintageBurn.png"
+                    width="256"
+                    height="320"
+                    loading="lazy"
+                    alt="Product Thumbnail"
+                    class="img-cover duration-[0.5s] ease-linear group-hover:scale-105"
+                  />
+                </figure>
+
+                <!-- Các nút action -->
+                <div
+                  class="bg-[#d89245c7] text-white px-3 py-1 absolute top-2/4 left-2/4 -translate-x-2/4 flex items-center space-x-2 opacity-0 duration-75 ease-linear group-hover:-translate-y-2/4 group-hover:opacity-100 rounded-lg"
+                >
+                  <!-- Wishlist -->
+                  <button
+                    type="button"
+                    data-cart-toggler
+                    class="h-9 w-9 grid place-items-center hover:scale-110 transition-transform"
+                    title="Add to wishlist"
+                  >
+                    <ion-icon
+                      name="heart-outline"
+                      aria-hidden="true"
+                      class="text-[22px]"
+                    ></ion-icon>
+                  </button>
+
+                  <!-- Play video button (mở popup video) -->
+                  <button
+                    class="h-9 w-9 grid place-items-center hover:scale-110 transition-transform view-video-btn"
+                    data-video="./assets/videos/58328764 Vintage Burn Transitions.mp4"
+                    title="Watch Video"
+                  >
+                    <ion-icon
+                      name="play-outline"
+                      aria-hidden="true"
+                      class="text-[22px]"
+                    ></ion-icon>
+                  </button>
+
+                  <!-- Download button -->
+                  <a
+                    href="./assets/downloads/58328764 Vintage Burn Transitions.rar"
+                    download
+                    class="h-9 w-9 grid place-items-center hover:scale-110 transition-transform"
+                    title="Download file"
+                  >
+                    <ion-icon
+                      name="download-outline"
+                      aria-hidden="true"
+                      class="text-[22px]"
+                    ></ion-icon>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Nội dung sản phẩm -->
+              <div class="card-content space-y-2 text-center">
+                <p class="text-lg font-bold text-gray-800">Vintage Burn Transitions</p>
+                <p class="text-sm text-gray-500">
+                  Chuyển cảnh độc đáo, cảm giác vintage chân thực.
+                </p>
+              </div>
+            </li>
+
+            <li
+              class="group pb-6 space-y-5 max-w-64 rounded-lg duration-75 ease-linear"
+            >
+              <div class="relative overflow-hidden rounded-lg">
+                <!-- Ảnh đại diện -->
+                <figure class="img-holder h-80">
+                  <img
+                    src="./assets/images/Tunnel.png"
+                    width="256"
+                    height="320"
+                    loading="lazy"
+                    alt="Product Thumbnail"
+                    class="img-cover duration-[0.5s] ease-linear group-hover:scale-105"
+                  />
+                </figure>
+
+                <!-- Các nút action -->
+                <div
+                  class="bg-[#d89245c7] text-white px-3 py-1 absolute top-2/4 left-2/4 -translate-x-2/4 flex items-center space-x-2 opacity-0 duration-75 ease-linear group-hover:-translate-y-2/4 group-hover:opacity-100 rounded-lg"
+                >
+                  <!-- Wishlist -->
+                  <button
+                    type="button"
+                    data-cart-toggler
+                    class="h-9 w-9 grid place-items-center hover:scale-110 transition-transform"
+                    title="Add to wishlist"
+                  >
+                    <ion-icon
+                      name="heart-outline"
+                      aria-hidden="true"
+                      class="text-[22px]"
+                    ></ion-icon>
+                  </button>
+
+                  <!-- Play video button (mở popup video) -->
+                  <button
+                    class="h-9 w-9 grid place-items-center hover:scale-110 transition-transform view-video-btn"
+                    data-video="./assets/videos/49451455 Infinite Tunnel Transitions.mp4"
+                    title="Watch Video"
+                  >
+                    <ion-icon
+                      name="play-outline"
+                      aria-hidden="true"
+                      class="text-[22px]"
+                    ></ion-icon>
+                  </button>
+
+                  <!-- Download button -->
+                  <a
+                    href="./assets/downloads/49451455 Infinite Tunnel Transitions.rar"
+                    download
+                    class="h-9 w-9 grid place-items-center hover:scale-110 transition-transform"
+                    title="Download file"
+                  >
+                    <ion-icon
+                      name="download-outline"
+                      aria-hidden="true"
+                      class="text-[22px]"
+                    ></ion-icon>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Nội dung sản phẩm -->
+              <div class="card-content space-y-2 text-center">
+                <p class="text-lg font-bold text-gray-800">Tunnel Transistions</p>
+                <p class="text-sm text-gray-500">
+                  Mang lại chiều sâu và sự liền mạch cho video.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 
+      - #Testimonials
+    -->
+
+      <section class="bg-caf_noir text-white md:hidden">
+        <div class="container mx-auto px-3 py-10 sm:px-7 md:py-16 lg:py-24">
+          <h2
+            class="text-5xl font-primary mb-6 flex items-center gap-2 lg:text-6xl"
+          >
+            Customer
+            <span class="italic">Reviews</span>
+          </h2>
+
+          <div data-slider-container>
+            <ul
+              class="slider min-h-[560px] mb-6 sm:min-h-[300px] md:min-h-[305px]"
+              data-slider
+            >
+              <li
+                class="slider-item testimonial-card bg-papaya_whip group rounded-md overflow-hidden min-w-[450px] sm:min-w-[580px] sm:max-w-[580px] sm:grid sm:grid-cols-[0.4fr_1fr] md:min-w-[756px]"
+              >
+                <figure
+                  class="img-holder h-64 sm:h-full"
+                  style="--width: 250px; --height: 210px"
+                >
+                  <img
+                    src="./assets/images/purchased-items-1.jpg"
+                    width="250"
+                    height="210"
+                    loading="lazy"
+                    alt=""
+                    class="img-cover duration-[0.5s] ease-linear group-hover:scale-105"
+                  />
+                </figure>
+
+                <div class="card-content px-4 py-5 md:px-5 md:py-8">
+                  <div class="rating">
+                    <ion-icon
+                      name="star"
+                      aria-hidden="true"
+                      class="text-butterscotch"
+                    ></ion-icon>
+                    <ion-icon
+                      name="star"
+                      aria-hidden="true"
+                      class="text-butterscotch"
+                    ></ion-icon>
+                    <ion-icon
+                      name="star"
+                      aria-hidden="true"
+                      class="text-butterscotch"
+                    ></ion-icon>
+                    <ion-icon
+                      name="star"
+                      aria-hidden="true"
+                      class="text-butterscotch"
+                    ></ion-icon>
+                    <ion-icon
+                      name="star"
+                      aria-hidden="true"
+                      class="text-butterscotch"
+                    ></ion-icon>
+                  </div>
+
+                  <h3
+                    class="text-caf_noir text-lg uppercase font-semibold my-5"
+                  >
+                    Love It!
+                  </h3>
+
+                  <p class="text-jet text-sm mb-5 max-h-[80px] overflow-y-auto">
+                    “This scarf instantly became my go-to for chilly mornings.
+                    The red tartan is so rich and classic — it feels like
+                    something you'd borrow from your grandma's closet and never
+                    give back. Soft, warm, and full of quiet charm.”
+                  </p>
+
+                  <div
+                    class="pt-5 flex items-center gap-4 border-t border-solid border-[#1111111a]"
+                  >
+                    <figure
+                      class="img-holder avatar"
+                      style="--width: 60px; --height: 60px"
+                    >
+                      <img
+                        src="./assets/images/avatar-1.png"
+                        width="60"
+                        height="60"
+                        alt=""
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <div>
+                      <p class="text-caf_noir text-sm font-semibold mb-1">
+                        Emily T.
+                      </p>
+
+                      <div class="flex flex-wrap items-center gap-x-2 gap-y-1">
+                        <p class="text-jet text-xs font-semibold">
+                          Item purchased:
+                        </p>
+
+                        <a
+                          href="#"
+                          class="text-butterscotch text-xs font-semibold underline flex items-center gap-1"
+                        >
+                          Red Tartan Cashmere Scarf
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li
+                class="slider-item testimonial-card bg-papaya_whip group rounded-md overflow-hidden min-w-[450px] sm:min-w-[580px] sm:max-w-[580px] sm:grid sm:grid-cols-[0.4fr_1fr] md:min-w-[756px]"
+              >
+                <figure
+                  class="img-holder h-64 sm:h-full"
+                  style="--width: 251px; --height: 210px"
+                >
+                  <img
+                    src="./assets/images/purchased-items-2.png"
+                    width="251"
+                    height="210"
+                    loading="lazy"
+                    alt=""
+                    class="img-cover duration-[0.5s] ease-linear group-hover:scale-105"
+                  />
+                </figure>
+
+                <div class="card-content px-4 py-5 md:px-5 md:py-8">
+                  <div class="rating">
+                    <ion-icon
+                      name="star"
+                      aria-hidden="true"
+                      class="text-butterscotch"
+                    ></ion-icon>
+                    <ion-icon
+                      name="star"
+                      aria-hidden="true"
+                      class="text-butterscotch"
+                    ></ion-icon>
+                    <ion-icon
+                      name="star"
+                      aria-hidden="true"
+                      class="text-butterscotch"
+                    ></ion-icon>
+                    <ion-icon
+                      name="star"
+                      aria-hidden="true"
+                      class="text-butterscotch"
+                    ></ion-icon>
+                    <ion-icon
+                      name="star"
+                      aria-hidden="true"
+                      class="text-butterscotch"
+                    ></ion-icon>
+                  </div>
+
+                  <h3
+                    class="text-caf_noir text-lg uppercase font-semibold my-5"
+                  >
+                    Love It!
+                  </h3>
+
+                  <p class="text-jet text-sm mb-5 max-h-[80px] overflow-y-auto">
+                    “I wasn’t expecting to love a scarf this much, but wow. The
+                    black tartan has that perfect balance of minimal and
+                    vintage. It feels luxurious without trying too hard — and
+                    it's unbelievably soft against the skin.”
+                  </p>
+
+                  <div
+                    class="pt-5 flex items-center gap-4 border-t border-solid border-[#1111111a]"
+                  >
+                    <figure
+                      class="img-holder avatar"
+                      style="--width: 60px; --height: 60px"
+                    >
+                      <img
+                        src="./assets/images/avatar-2.png"
+                        width="60"
+                        height="60"
+                        alt=""
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <div>
+                      <p class="text-caf_noir text-sm font-semibold mb-1">
+                        Hannah K.
+                      </p>
+
+                      <div class="flex flex-wrap items-center gap-x-2 gap-y-1">
+                        <p class="text-jet text-xs font-semibold">
+                          Item purchased:
+                        </p>
+
+                        <a
+                          href="#"
+                          class="text-butterscotch text-xs font-semibold underline flex items-center gap-1"
+                        >
+                          Black Tartan Cashmere Scarf
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li
+                class="slider-item testimonial-card bg-papaya_whip group rounded-md overflow-hidden min-w-[450px] sm:min-w-[580px] sm:max-w-[580px] sm:grid sm:grid-cols-[0.4fr_1fr] md:min-w-[756px]"
+              >
+                <figure
+                  class="img-holder h-64 sm:h-full"
+                  style="--width: 250px; --height: 210px"
+                >
+                  <img
+                    src="./assets/images/purchased-items-3.png"
+                    width="250"
+                    height="210"
+                    loading="lazy"
+                    alt=""
+                    class="img-cover duration-[0.5s] ease-linear group-hover:scale-105"
+                  />
+                </figure>
+
+                <div class="card-content px-4 py-5 md:px-5 md:py-8">
+                  <div class="rating">
+                    <ion-icon
+                      name="star"
+                      aria-hidden="true"
+                      class="text-butterscotch"
+                    ></ion-icon>
+                    <ion-icon
+                      name="star"
+                      aria-hidden="true"
+                      class="text-butterscotch"
+                    ></ion-icon>
+                    <ion-icon
+                      name="star"
+                      aria-hidden="true"
+                      class="text-butterscotch"
+                    ></ion-icon>
+                    <ion-icon
+                      name="star"
+                      aria-hidden="true"
+                      class="text-butterscotch"
+                    ></ion-icon>
+                    <ion-icon
+                      name="star"
+                      aria-hidden="true"
+                      class="text-butterscotch"
+                    ></ion-icon>
+                  </div>
+
+                  <h3
+                    class="text-caf_noir text-lg uppercase font-semibold my-5"
+                  >
+                    Love It!
+                  </h3>
+
+                  <p class="text-jet text-sm mb-5 max-h-[80px] overflow-y-auto">
+                    “I didn’t expect much, but this candle surprised me. The
+                    frosted glass looks great on my shelf, and the soft glow is
+                    perfect for relaxing. The scent is subtle and calming — just
+                    right for my space.”
+                  </p>
+
+                  <div
+                    class="pt-5 flex items-center gap-4 border-t border-solid border-[#1111111a]"
+                  >
+                    <figure
+                      class="img-holder avatar"
+                      style="--width: 60px; --height: 60px"
+                    >
+                      <img
+                        src="./assets/images/avatar-3.png"
+                        width="60"
+                        height="60"
+                        alt=""
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <div>
+                      <p class="text-caf_noir text-sm font-semibold mb-1">
+                        Ethan V.
+                      </p>
+
+                      <div class="flex flex-wrap items-center gap-x-2 gap-y-1">
+                        <p class="text-jet text-xs font-semibold">
+                          Item purchased:
+                        </p>
+
+                        <a
+                          href="#"
+                          class="text-butterscotch text-xs font-semibold underline flex items-center gap-1"
+                        >
+                          Frosted Glass Scented Candles
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li
+                class="slider-item testimonial-card bg-papaya_whip group rounded-md overflow-hidden min-w-[450px] sm:min-w-[580px] sm:max-w-[580px] sm:grid sm:grid-cols-[0.4fr_1fr] md:min-w-[756px]"
+              >
+                <figure
+                  class="img-holder h-64 sm:h-full"
+                  style="--width: 562px; --height: 678px"
+                >
+                  <img
+                    src="./assets/images/purchased-items-4.png"
+                    width="562"
+                    height="678"
+                    loading="lazy"
+                    alt=""
+                    class="img-cover duration-[0.5s] ease-linear group-hover:scale-105"
+                  />
+                </figure>
+
+                <div class="card-content px-4 py-5 md:px-5 md:py-8">
+                  <div class="rating">
+                    <ion-icon
+                      name="star"
+                      aria-hidden="true"
+                      class="text-butterscotch"
+                    ></ion-icon>
+                    <ion-icon
+                      name="star"
+                      aria-hidden="true"
+                      class="text-butterscotch"
+                    ></ion-icon>
+                    <ion-icon
+                      name="star"
+                      aria-hidden="true"
+                      class="text-butterscotch"
+                    ></ion-icon>
+                    <ion-icon
+                      name="star"
+                      aria-hidden="true"
+                      class="text-butterscotch"
+                    ></ion-icon>
+                    <ion-icon
+                      name="star"
+                      aria-hidden="true"
+                      class="text-butterscotch"
+                    ></ion-icon>
+                  </div>
+
+                  <h3
+                    class="text-caf_noir text-lg uppercase font-semibold my-5"
+                  >
+                    Love It!
+                  </h3>
+
+                  <p class="text-jet text-sm mb-5 max-h-[80px] overflow-y-auto">
+                    “This tote is everything I didn’t know I needed. The little
+                    embroidered bicycle and fall leaves? Adorable. It feels like
+                    something you’d find in a storybook — practical, but with a
+                    bit of poetry. I use it almost every day.”
+                  </p>
+
+                  <div
+                    class="pt-5 flex items-center gap-4 border-t border-solid border-[#1111111a]"
+                  >
+                    <figure
+                      class="img-holder avatar"
+                      style="--width: 60px; --height: 60px"
+                    >
+                      <img
+                        src="./assets/images/avatar-4.jpeg"
+                        width="60"
+                        height="60"
+                        alt=""
+                        class="img-cover"
+                      />
+                    </figure>
+
+                    <div>
+                      <p class="text-caf_noir text-sm font-semibold mb-1">
+                        Sofia R.
+                      </p>
+
+                      <div class="flex flex-wrap items-center gap-x-2 gap-y-1">
+                        <p class="text-jet text-xs font-semibold">
+                          Item purchased:
+                        </p>
+
+                        <a
+                          href="#"
+                          class="text-butterscotch text-xs font-semibold underline flex items-center gap-1"
+                        >
+                          Fall Leaves Bicycle Handcrafted Tote Bag
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <div
+              class="flex items-center justify-center gap-3 border-t border-t-caf_noir mx-auto md:-order-1 md:mx-0 mx:ms-auto"
+            >
+              <button
+                class="arrow-button"
+                aria-label="slide prev"
+                data-prev-btn
+              >
+                <ion-icon
+                  name="chevron-back-outline"
+                  aria-hidden="true"
+                  class="text-papaya_whip font-bold"
+                ></ion-icon>
+              </button>
+
+              <button
+                class="arrow-button"
+                aria-label="slide next"
+                data-next-btn
+              >
+                <ion-icon
+                  name="chevron-forward-outline"
+                  aria-hidden="true"
+                  class="text-papaya_whip font-bold"
+                ></ion-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 
+    - #Footer
+  -->
+    <hr class="border-black border-t-2" />
+    <footer id="info">
+      <div class="container mx-auto">
+        <div class="relative px-3 py-12 space-y-6 md:space-y-24 lg:pb-24">
+          <div
+            class="flex flex-wrap gap-y-6 gap-x-20 sm:grid sm:grid-cols-2 md:grid-cols-4 md:gap-x-10"
+          >
+            <h2
+              class="text-caf_noir font-inter font-bold text-4xl md:mt-5 text-center"
+            >
+              Liên hệ với <br />
+              chúng tôi tại
+            </h2>
+
+            <div>
+              <span class="text-caf_noir font-bold md:mt-10"
+                >Mailing Address</span
+              >
+
+              <p>
+                Đại học FPT <br />
+                Hòa Lạc
+              </p>
+            </div>
+
+            <div class="mt-auto md:mt-10">
+              <span class="text-caf_noir font-bold">Email Address</span>
+
+              <a href="mailto:hello@reallygreatsite.com">
+                hello@reallygreatsite.com
+              </a>
+            </div>
+
+            <div>
+              <div class="flex items-center gap-2 mb-2 md:-mt-30">
+                <a
+                  href="https://www.facebook.com/bii.quang.3"
+                  class="bg-caf_noir h-7 w-7 grid place-items-center rounded-full group"
+                >
+                  <ion-icon
+                    name="logo-twitter"
+                    aria-hidden="true"
+                    class="text-papaya_whip duration-150 group-hover:scale-125"
+                  ></ion-icon>
+                </a>
+
+                <a
+                  href="https://www.facebook.com/bii.quang.3"
+                  class="bg-caf_noir h-7 w-7 grid place-items-center rounded-full group"
+                >
+                  <ion-icon
+                    name="logo-facebook"
+                    aria-hidden="true"
+                    class="text-papaya_whip duration-150 group-hover:scale-125"
+                  ></ion-icon>
+                </a>
+
+                <a
+                  href="https://www.facebook.com/bii.quang.3"
+                  class="bg-caf_noir h-7 w-7 grid place-items-center rounded-full group"
+                >
+                  <ion-icon
+                    name="logo-github"
+                    aria-hidden="true"
+                    class="text-papaya_whip duration-150 group-hover:scale-125"
+                  ></ion-icon>
+                </a>
+
+                <a
+                  href="https://www.facebook.com/bii.quang.3"
+                  class="bg-caf_noir h-7 w-7 grid place-items-center rounded-full group"
+                >
+                  <ion-icon
+                    name="logo-instagram"
+                    aria-hidden="true"
+                    class="text-papaya_whip duration-150 group-hover:scale-125"
+                  ></ion-icon>
+                </a>
+              </div>
+
+              <span class="text-caf_noir font-bold md:mt-3">Phone Number</span>
+
+              <a href="tel:(123) 456 7890"> (+84) 795282609 </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom px-3 py-4 space-y-6 text-center">
+          <p>
+            Copyright
+            <a href="" class="text-caf_noir font-bold underline inline"></a>
+            2025 | All rights reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Popup -->
+    <!-- Popup so sánh ảnh -->
+    <div
+      id="product-popup"
+      class="fixed inset-0 bg-black/50 flex justify-center items-center opacity-0 pointer-events-none transition-opacity duration-300 z-50"
+    >
+      <div class="relative w-[90%] max-w-4xl bg-white rounded-lg p-4">
+        <!-- Nút đóng -->
+        <button
+          id="close-popup"
+          class="absolute top-2 right-2 text-gray-700 hover:text-black text-2xl z-20"
+          title="Close"
+        >
+          ✖
+        </button>
+
+        <!-- Vùng so sánh ảnh -->
+        <div
+          id="compare-container"
+          class="relative w-full overflow-hidden rounded-lg select-none aspect-[4/3] max-h-[80vh]"
+        >
+          <!-- Ảnh gốc -->
+          <img
+            id="popup-image-original"
+            src=""
+            alt="Original"
+            class="absolute inset-0 w-full h-full object-cover pointer-events-none select-none"
+          />
+
+          <!-- Ảnh overlay phủ toàn bộ nhưng bị clip 50% -->
+          <img
+            id="popup-image-overlay"
+            src=""
+            alt="Overlay"
+            class="absolute inset-0 w-full h-full object-cover pointer-events-none select-none"
+            style="clip-path: inset(0 50% 0 0)"
+          />
+
+          <!-- Thanh kéo -->
+          <div
+            id="slider-handle"
+            class="absolute top-0 h-full w-1 bg-[rgba(216,146,69,0.9)] cursor-ew-resize z-10 transform -translate-x-1/2 before:content-[''] before:absolute before:top-1/2 before:left-1/2 before:w-7 before:h-7 before:bg-[#d89245] before:rounded-full before:transform before:-translate-x-1/2 before:-translate-y-1/2 before:shadow-[0_0_6px_rgba(0,0,0,0.35)] sm:before:w-9 sm:before:h-9"
+            style="left: 50%"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popup giỏ hàng -->
+    <div
+      id="cart-popup"
+      class="fixed inset-0 bg-black/50 flex justify-center items-center opacity-0 pointer-events-none transition-opacity duration-300 z-50"
+    >
+      <div class="bg-white rounded-lg w-96 p-6 relative">
+        <!-- Nút đóng -->
+        <button
+          type="button"
+          id="close-cart-popup"
+          class="absolute top-2 right-2 text-gray-600 hover:text-black"
+        >
+          ✖
+        </button>
+
+        <h2 class="text-xl font-bold mb-4">
+          Để lại thông tin cho chúng tôi để nhận được nhiều thông tin và ưu đãi
+          !
+        </h2>
+
+        <form
+          id="order-form"
+          action="https://formspree.io/f/mvgbljyr"
+          method="POST"
+          class="space-y-4"
+        >
+          <input
+            type="text"
+            name="name"
+            placeholder="Họ và tên"
+            class="w-full border p-2 rounded"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            class="w-full border p-2 rounded"
+            required
+          />
+          <input
+            type="text"
+            name="phone"
+            placeholder="Số điện thoại"
+            class="w-full border p-2 rounded"
+            required
+          />
+          <p>
+            Chúng tôi sẽ liên hệ với bạn sớm nhất có thể! Cảm ơn bạn đã ủng hộ
+            FTech.
+          </p>
+          <button
+            type="submit"
+            class="w-full bg-[#d89245] text-white py-2 rounded hover:bg-[#b86e2e]"
+          >
+            Gửi
+          </button>
+
+          <!-- ⚠️ Đây là phần quan trọng -->
+          <p id="form-message" class="hidden text-green-600 text-center mt-2">
+            Gửi thành công!
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <!-- 
+    - ionicon link
+  -->
+    <!-- Popup xem video -->
+    <div
+      id="video-popup"
+      class="fixed inset-0 bg-black/90 hidden justify-center items-center z-50"
+    >
+      <div class="relative w-full max-w-4xl mx-auto p-4">
+        <!-- Video -->
+        <video id="popup-video" class="w-full max-h-[80vh] rounded-lg" controls>
+          <source src="" type="video/mp4" />
+          Trình duyệt của bạn không hỗ trợ video.
+        </video>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      const popup = document.getElementById("product-popup");
+      const closePopup = document.getElementById("close-popup");
+
+      document
+        .querySelectorAll('ion-icon[name="eye-outline"]')
+        .forEach((icon) => {
+          icon.addEventListener("click", (e) => {
+            e.preventDefault();
+            popup.classList.remove("opacity-0", "pointer-events-none");
+            popup.classList.add("opacity-100");
+          });
+        });
+
+      closePopup.addEventListener("click", () => {
+        popup.classList.add("opacity-0", "pointer-events-none");
+        popup.classList.remove("opacity-100");
+      });
+
+      popup.addEventListener("click", (e) => {
+        if (e.target === popup) {
+          popup.classList.add("opacity-0", "pointer-events-none");
+          popup.classList.remove("opacity-100");
+        }
+      });
+    </script>
+  </body>
+</html>
